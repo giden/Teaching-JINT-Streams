@@ -10,6 +10,12 @@ import java.util.Map;
 
 public class UserService implements UserServiceInterface {
 
+    private List<User> users;
+
+    public UserService(List<User> users) {
+        this.users = users;
+    }
+
     public List<User> findUsersWithAddressesCountMoreThan(int numberOfAddresses) {
         return null;
     }
