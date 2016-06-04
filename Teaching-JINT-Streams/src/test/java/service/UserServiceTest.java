@@ -47,7 +47,7 @@ public class UserServiceTest {
         users.add(user3);
         UserService us = new UserService(users);
 
-        Assert.assertEquals(user2.getPersonDetails().getAge(), us.findOldestPerson());
+        Assert.assertEquals(user2.getPersonDetails().getAge(), us.findOldestPerson().getAge());
     }
 
     @Test
