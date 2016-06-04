@@ -9,6 +9,15 @@ public class Address {
     private String postCode;
     private String country;
 
+    public Address(Integer houseNumber, String streetName, Integer flatNumber, String city, String country, String postCode) {
+        this.houseNumber = houseNumber;
+        this.streetName = streetName;
+        this.flatNumber = flatNumber;
+        this.city = city;
+        this.country = country;
+        this.postCode = postCode;
+    }
+
     public String getStreetName() {
         return streetName;
     }

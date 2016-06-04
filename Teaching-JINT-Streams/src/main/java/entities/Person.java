@@ -10,6 +10,15 @@ public class Person {
     private Role role;
     private int age;
 
+    public Person(String surname, String name, List<String> phoneNumbers, List<Address> addresses, Role role, int age) {
+        this.surname = surname;
+        this.name = name;
+        this.phoneNumbers = phoneNumbers;
+        this.addresses = addresses;
+        this.role = role;
+        this.age = age;
+    }
+
     public String getName() {
         return name;
     }
